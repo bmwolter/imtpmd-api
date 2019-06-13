@@ -11,8 +11,8 @@ class ProductController extends Controller
     {
       $ean_code = Product::where('ean_code', '=', $ean_code)->first();
 
-    return response()->json([
-      "ean_code" => $ean_code,
-    ]);
+    return response()->json(
+      $ean_code,
+    );
     }
 }
