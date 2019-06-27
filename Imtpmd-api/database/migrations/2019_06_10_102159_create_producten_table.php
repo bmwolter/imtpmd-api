@@ -17,6 +17,7 @@ class CreateProductenTable extends Migration
           $table->string('product_naam');
           $table->string('ean_code');
           $table->string('merk_naam');
+          $table->string('categorie');
         });
     }
 
